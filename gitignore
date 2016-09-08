@@ -1,4 +1,5 @@
 .bundle
 .idea
 nbproject/
+composer.phar
 
