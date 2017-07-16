@@ -1,6 +1,7 @@
 export TERM=xterm-256color
 export PATH=~/.bin:$PATH
 source ~/.bash/init.sh
+source ~/.bash/sensible.sh
 
 # prompt
 source ~/.bash/prompt.sh
