@@ -1,1 +1,7 @@
-/home/roland/dev/docker/bin/composer.sh
+#!/usr/bin/env bash
+
+docker run --rm --interactive --tty \
+    --volume $(pwd):/app \
+    --user $(id -u):$(id -g) \
+    composer "${@}"
+
