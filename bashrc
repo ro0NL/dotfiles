@@ -1,3 +1,4 @@
+export GPG_TTY=$(tty)
 export TERM=xterm-256color
 export PATH=~/.bin:$PATH
 source ~/.bash/init.sh
