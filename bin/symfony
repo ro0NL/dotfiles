@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+bash <(curl -s https://raw.githubusercontent.com/ro0NL/symfony-lando/master/create-project.sh) "$1" && cd "$1"
+
