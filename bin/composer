@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-docker run --rm --interactive --tty \
-    --volume $(pwd):/app \
-    --user $(id -u):$(id -g) \
-    composer "${@}"
+dockerized="docker run --rm -v $(pwd):/app -w /app -u $(id -u):$(id -g)"
+[[ -t 1 ]] && dockerized="${dockerized} -it"
+
+${dockerized} composer ${@}
 
