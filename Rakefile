@@ -1,5 +1,6 @@
 DO_NOT_SYMLINK = %w[
   .gitignore
+  install.sh
   Rakefile
   README.md
 ]
