@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-dockerized="docker run --rm -v ${HOME}/.composer:/tmp/composer -v $(pwd):/app -w /app -u $(id -u):$(id -g) -e COMPOSER_HOME=/tmp/composer"
-[[ -t 1 ]] && dockerized="${dockerized} -it"
-
-[[ ! -d ~/.composer ]] && mkdir ~/.composer
-${dockerized} composer ${@}
-

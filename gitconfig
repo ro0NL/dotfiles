@@ -1,7 +1,6 @@
 [user]
 	name = Roland Franssen
 	email = franssen.roland@gmail.com
-	signingkey = 366BB49520DA6261
 [core]
 	excludesfile = ~/.gitignore
 	ignorecase = false
