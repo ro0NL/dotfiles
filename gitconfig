@@ -16,7 +16,7 @@
 [alias]
 	co = checkout
 	cm = commit
-	cma = commit --amend
+	cma = commit --amend --date=now
 	cp = cherry-pick
 	br = branch
 	me = merge
